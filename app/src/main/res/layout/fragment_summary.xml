@@ -48,8 +48,8 @@
                     style="@style/Widget.Cupcake.TextView.OrderSummary"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/quantity"
                     android:textAllCaps="true"
+                    android:text="@{viewModel.quantity.toString()}"
                     android:textStyle="normal" />
 
                 <TextView
@@ -80,6 +80,7 @@
                     style="@style/Widget.Cupcake.TextView.OrderSummary"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="@{viewModel.flavor}"
                     android:layout_marginTop="@dimen/order_summary_margin"
                     tools:text="Chocolate" />
 
@@ -104,6 +105,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/order_summary_margin"
+                    android:text="@{viewModel.date}"
                     tools:text="Sunday" />
 
                 <View
